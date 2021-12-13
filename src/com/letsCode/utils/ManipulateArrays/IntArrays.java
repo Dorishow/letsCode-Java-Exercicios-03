@@ -12,10 +12,14 @@ public class IntArrays {
         return array;
     }
 
+
+    public static boolean isEven(int number) {
+        return number % 2 == 0;
+    }
     public static void showEvenNumbers(int[] array){
         System.out.printf("%nNúmeros pares: ");
         for (int number: array){
-            if (number % 2 == 0){
+            if (isEven(number)){
                 System.out.printf("%d, ",number);
             }
         }
@@ -24,7 +28,7 @@ public class IntArrays {
     public static void showOddNumbers(int[] array){
         System.out.printf("%nNúmeros ímpares: ");
         for (int number: array){
-            if (number % 2 != 0){
+            if (!isEven(number)){
                 System.out.printf("%d, ",number);
             }
         }
