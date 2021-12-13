@@ -4,7 +4,7 @@ import com.letsCode.utils.InputScanner;
 
 public class OlderAndYoungerPerson {
     public static void main(String[] args) {
-        Person[] arrayOfPeople = new Person[3];
+        Person[] arrayOfPeople = new Person[5];
         setPersonFromInputToArray(arrayOfPeople);
 
         Person olderOneOnArray = getOlderPersonOfArray(arrayOfPeople);
